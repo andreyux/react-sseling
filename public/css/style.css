@@ -1,0 +1,328 @@
+body{
+	background:#fafafa;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin:0;
+	width: 100%;
+}
+#header{
+	width: 1024px;
+	margin: 0 auto;
+}
+#headerImage{
+	z-index: 1000;
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#headerImageBg{
+	z-index: 100;
+    display: block;
+    height: 83px;
+    width: 100%;
+    position: absolute;
+    background: url(../images/headerAdminBg.jpg) repeat-x;
+}
+#appContainer{
+	width:1024px;
+	height: auto;
+	background:#fff;
+	border:1px solid #d0d2d3;
+	border-radius: 2px;
+}
+.sidebarHeading{
+	background:#eeeeee;
+	color:#444444;
+	border-bottom:1px solid #d0d2d3;
+	font-size:12px;
+	padding:5px;
+	font-weight:bold;
+}
+#searchHolder{
+	background:#fff;
+	height:30px;
+	width:100%;
+	display:block;
+	border-bottom:1px solid #d0d2d3;
+}
+#SearchInput{
+	height:100%;
+	border:none;
+	font-size:15px;
+	outline: none; 
+	width:261px;
+	padding:10px;
+	border-right:1px solid #d0d2d3;
+}
+.mainContentArea{
+	float:left;
+	border-left:1px solid #d0d2d3;
+	background:#fff;
+	width: 762px;
+	height: 100%;
+	padding: 20px;
+	box-sizing:border-box;
+	position: relative;
+}
+#sidebar{
+	float:left;
+	position: relative;
+	background:#fff;
+	box-sizing:border-box;
+	border-top:none;
+	color:#444;
+	border-radius: 2px;
+	width:260px; /*IDEALLY THIS SHOULD FOLLOW THE SIZE OF THE SIDEBAR IN THE HUB*/
+	font-weight: 100;
+	display: block;
+}.sidebarHide{
+	height: 0;
+}
+.queryResult{
+	padding:10px;
+	background:none;
+	border-bottom:1px solid #d0d2d3;
+	cursor: pointer;
+}
+.queryResult:hover{
+	background:#f6f6f6;
+}
+.Avatar50{
+	border-radius: 100px;
+	float:left;
+	margin-right:10px;
+	width: 50px;
+	height: 50px;
+}
+.Avatar70{
+	border-radius: 100px;
+	float:left;
+	width: 70px;
+	height: 70px;
+	margin-right:10px;
+}
+.personDetails{
+	float:left;
+	line-height: 17px;
+}
+
+.personName{
+	font-weight: bold;
+	color: #08a5c5;
+	font-size:14px;
+}
+.personWork{
+	font-size:13px;
+	font-weight: bold;
+	color: #666666;
+}
+.personCompany{
+	text-decoration: underline;
+}
+.personAdvocates{
+	font-size:13px;
+	color:#db5240;
+}
+.mainProfileDetails{
+	float:left;
+}
+.mainProfileFirstLine{
+	color: #08a5c5;
+	font-size:22px;
+	margin-bottom:5px;
+}
+.mainProfileSecondLine{
+	font-size:15px;
+	margin-bottom:5px;
+	color: #666666;
+}
+.mainProfileThirdLine{
+	font-size:14px;
+	color: #08a5c5;
+}
+.mainProfileTopRight{
+	float:right;
+}
+.mainProfileTopRightSocialBtn{
+	cursor: pointer;
+	background:white;
+	border:1px solid #d0d2d3;
+	border-radius: 2px;
+	width:35px;
+	text-align: center;
+	padding-top:8px;
+	height:25px;
+	display: block;
+	float:left;
+	margin-right: 10px;
+}.twColor{
+	color:#6db0e3;
+}
+.fbColor{
+	color:#486699;
+}
+.liColor{
+	color:#307bb0;
+}
+.mainProfileBottom{
+	margin-top:30px;
+}
+.referralListHeading{
+	width:100%;
+	padding:0 0 5px 0;
+	border-bottom:1px solid #c2c2c2;
+	font-size:16px;
+	color:#666666;
+	margin-bottom:20px;
+
+}
+/* ====== CARD ======= */
+.cardReferrals{
+	-webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -kthtml-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+	background: #fff;
+	border:1px solid #bababa;
+	border-top: 1px solid #d3d3d3;
+	border-radius: 2px;
+  	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.06);
+  	margin:0 auto;
+  	margin-bottom:20px;
+  	height:170px;
+  	width: 750px;
+  	position: relative;
+}.cardReferralsWide{
+	-webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -kthtml-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+	height:auto;
+	box-shadow:0px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    width: 765px;
+    margin:0 auto;
+}
+.cardReferralsCover{
+	margin-bottom:20px;
+	width: 100%;
+}
+.cardReferralsTitle{
+	color:#08a5c5;
+	padding:15px 10px 15px 20px;
+	font-size:18px;
+	line-height: 1.2;
+	cursor: pointer;
+}
+.cardReferralsDesc{
+	padding:0 10px 10px 20px;
+	color:#444444;
+	margin-bottom:10px;
+	font-size:14px;
+	line-height: 1.2;
+}
+.cardReferralsStats{
+	font-size:12px;
+	font-weight: normal;
+	padding:10px 10px 10px 20px;
+}
+.cardReferralsStats span{
+	font-weight: bold;
+}
+.descHTML{
+	padding:0 10px 10px 20px;
+	font-weight: 100;
+}
+#cardReferralsLeft{
+	width: auto;
+	overflow: hidden;
+	border-right:1px solid #e9e9e9;
+}
+#cardReferralsRight{
+	float:right;
+	width:230px;
+	padding-left:20px;
+}
+.cardReferralsRightTitle{
+	font-size: 12px;
+	margin-bottom:10px;
+}
+.cardReferralsRightBtn{
+	float:left;
+	margin-right:20px;
+	width:35px;
+	height:35px;
+	background: #eeeeee;
+	border:1px solid  #d0d2d3;
+	border-radius: 2px;
+}.cardReferralsRightBtnBadge{
+    background: #70d21f;
+    border-radius: 2px;
+    top: -10px;
+    left: 23px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    padding: 2px;
+    width: 18px;
+}
+.cardReferralsViewDetails{
+	font-size:12px;
+	color:#08a5c5;
+	font-weight: bold;
+	float: right;
+	margin-right:10px;
+	cursor: pointer;
+}
+
+/* ====== STATS ======= */
+.statsTitle{
+	margin-bottom:10px;
+}
+.statsLabels{
+	padding:5px 5px 5px 0;
+	font-size:14px;
+}
+.statsNumbers{
+	font-weight: bold;
+	float:right;
+}
+.statsChart{
+	margin:0 auto;
+}
+
+/* ====== POP OVER ======= */
+
+.referralsPopOver{
+    background: #fff;
+    font-size:12px;
+    margin: 20px 0 0 -210px;
+    display: block;
+    border: 1px solid #d3d3d3;
+    position: relative;
+    border-radius: 2px;
+  	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+  	padding:20px;
+  	width:370px;
+}
+.referralsPopOverHeader{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.referralsPopOverDesc{
+	font-size:14px;
+}
+.referralsPopOverImg{
+	padding-top:20px;
+}
+
+.clearfix{
+	clear:both;
+	margin:0;
+	padding:0;
+}
