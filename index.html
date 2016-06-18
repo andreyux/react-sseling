@@ -13,5 +13,99 @@
 		<div id='root'>
 	</div>
     <script src="/static/bundle.js"></script>
+    <script src="./public/js/jquery-3.0.0.min.js"></script>
+	
+	<script>
+	// 	$.ajax({
+
+	// 	  // The 'type' property sets the HTTP method.
+	// 	  // A value of 'PUT' or 'DELETE' will trigger a preflight request.
+	// 	  type: 'POST',
+
+	// 	  // The URL to make the request to.
+	// 	  url: 'http://rhino.synapse.staging.c66.me/persons/find',
+
+	// 	  // The 'contentType' property sets the 'Content-Type' header.
+	// 	  // The JQuery default for this property is
+	// 	  // 'application/x-www-form-urlencoded; charset=UTF-8', which does not trigger
+	// 	  // a preflight. If you set this value to anything other than
+	// 	  // application/x-www-form-urlencoded, multipart/form-data, or text/plain,
+	// 	  // you will trigger a preflight request.
+	// 	  contentType: 'application/json',
+
+	// 	  xhrFields: {
+	// 	    // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
+	// 	    // This can be used to set the 'withCredentials' property.
+	// 	    // Set the value to 'true' if you'd like to pass cookies to the server.
+	// 	    // If this is enabled, your server must respond with the header
+	// 	    // 'Access-Control-Allow-Credentials: true'.
+	// 	    withCredentials: false
+	// 	  },
+
+	// 	  headers: {
+	// 	     "Authorization": "Basic " + btoa('Admin' + ":" + '$56hLbM6723!')
+	// 	  },
+
+	// 	  success: function() {
+	// 	    console.log('YEAH');
+	// 	  },
+
+	// 	  error: function() {
+	// 	  	console.log('NAH!');
+	// 	    // Here's where you handle an error response.
+	// 	    // Note that if the error was due to a CORS issue,
+	// 	    // this function will still fire, but there won't be any additional
+	// 	    // information about the error.
+	// 	  }
+	// 	});
+
+	// </script>
+
+<script>
+
+	// var settings = {
+	//   "async": true,
+	//   "crossDomain": true,
+	//   "url": "http://rhino.synapse.staging.c66.me/persons/find",
+	//   "method": "POST",
+	//   "headers": {
+	//     "authorization": "Basic YWRtaW46JDU2aExiTTY3MjMh",
+	//     "content-type": "application/json",
+	//     "cache-control": "no-cache"
+	//   },
+	//   "processData": false,
+	//   "data": "{\n  \"params\": [\n    {\n      \"param\": \"currentOrg\",\n      \"value\": \"Microsoft\",\n      \"searchType\": \"SEARCH_EQUALS\"\n    }\n  ]\n}"
+	// }
+
+	// $.ajax(settings).done(function (response) {
+	//   console.log(response);
+	// });
+
+</script>
+
+	<script>
+		
+		// var settings = {
+		//   "async": true,
+		//   "crossDomain": true,
+	 // 	  "headers": {
+		//     "Authorization": "Basic " + btoa('Admin' + ":" + '$56hLbM6723!')
+		//   },
+		//   "url": "http://rhino.synapse.staging.c66.me/persons/find",
+		//   "method": "POST",
+		//   "headers": {
+		//     "Content-Type": "application/json",
+		//     "Cache-Control": "no-cache"
+		//   },
+		//   "processData": false,
+		//   "data": "{\n  \"params\": [\n    {\n      \"param\": \"currentOrg\",\n      \"value\": \"Microsoft\",\n      \"searchType\": \"SEARCH_EQUALS\"\n    }\n  ]\n}"
+		// }
+
+		// $.ajax(settings).done(function (response) {
+		//   console.log(response);
+		// });
+	</script>
+
+
   </body>
 </html>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PersonProfile from './PersonProfile';
 import CompanyProfile from './CompanyProfile';
 
@@ -22,8 +23,9 @@ class MainContentArea extends Component {
 
 	searchType(type){
 		if(type==='person'){
+			console.log(this.props.profile);
 			return (
-				<PersonProfile {...person} />
+				<PersonProfile {...this.props.profile} />
 			);
 		}else{
 			return(
@@ -33,12 +35,23 @@ class MainContentArea extends Component {
 	}
 
 	render() {
+		if(!this.props.profile){
+			return <div className='selectProfile'>Please select a profile.</div>;
+		}
+
 		return (
 			<div className='mainContentArea'>
-				{this.searchType('company')}
+				{this.searchType('person')}
 			</div>
 		);
 	}
 }
 
-export default MainContentArea;
+
+function mapStateToProps(state){
+	return {
+		profile: state.profile
+	};
+}
+
+export default connect(mapStateToProps)(MainContentArea);

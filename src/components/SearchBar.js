@@ -7,8 +7,7 @@ class SearchBar extends Component {
 	render() {
 		return (
 			<div id='searchHolder'>
-				<div onClick={()=>this.props.searchResults('Microsoft')}>RUN</div>
-				<input id='SearchInput' placeholder='Search' />
+				<input id='SearchInput' onClick={()=>this.props.searchResults('Microsoft')} placeholder='Search' />
 			</div>
 		);
 	}

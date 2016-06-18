@@ -1,16 +1,17 @@
 import axios from 'axios';
 import request from 'superagent';
-import data from '../apireq/data';
+import {userProfile} from '../apireq/data';
 
 const USER = 'admin';
 const PASS = '$56hLbM6723!';
 
-export const SEARCH_RESULTS = "SEARCH_RESULTS";
+export const SHOW_PERSON = "SHOW_PERSON";
 
-export function searchResults(){
+export function profile(id){
 	
-	var req = data('profile');
+	var req = userProfile(id);
 
+	console.log(req);
 	
 	// const req = request
 	//    .post('http://rhino.synapse.staging.c66.me/persons/find')
@@ -80,7 +81,7 @@ export function searchResults(){
 	// });
 
 	return {
-		type: SEARCH_RESULTS,
-		payload: req.data
+		type: SHOW_PERSON,
+		payload: req
 	};
 }
