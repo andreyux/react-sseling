@@ -7,10 +7,10 @@ const PASS = '$56hLbM6723!';
 
 export const SEARCH_RESULTS = "SEARCH_RESULTS";
 
-export function searchResults(){
-	
-	var req = data('profile');
+export function searchResults(type, query){
 
+	var req = data(type);
+	
 	
 	// const req = request
 	//    .post('http://rhino.synapse.staging.c66.me/persons/find')

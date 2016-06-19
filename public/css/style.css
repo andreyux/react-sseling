@@ -53,6 +53,7 @@ body{
     font-size: 15px;
     box-sizing: border-box;
     outline: none;
+    float:left;
     width: 301px;
     padding-left: 10px;
     border-right: 1px solid #d0d2d3;
@@ -334,4 +335,82 @@ body{
 	clear:both;
 	margin:0;
 	padding:0;
+}
+.tabsHolder{
+	border-bottom:1px solid #d0d2d3;
+	width: 100%;
+	margin-top:30px;
+}
+.tab{
+	cursor: pointer;
+	font-size:14px;
+	float:left;
+	padding:10px 50px;
+	color:#666666;
+}.activeTab{
+    border-top: 3px solid #22a4c8;
+    color:#22a4c8;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+    border-right: 1px solid #d0d2d3;
+    border-left: 1px solid #d0d2d3;
+}
+.connectionHolder{
+	padding:10px;
+	border-bottom:1px solid #d0d2d3;
+}
+.advocateBadge{
+    background: #fff;
+    padding: 3px 4px 3px 5px;
+    left: 48px;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    color: #ffb038;
+}
+.advocateBadgeVIP{
+    background: #22a4c8;
+    padding: 3px 5px;
+    left: 21px;
+    top: 57px;
+    position: absolute;
+    border-radius: 2px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+.avatarHolder{
+	position: relative;
+	float:left;
+}
+.connectionDetails{
+	float:left;
+}
+.locationS{
+	color:#666666;
+	font-size:14px;
+}
+.requestIntroduction{
+	margin-top: 10px;
+	color:#22a4c8;
+	cursor: pointer;
+    font-size: 14px;
+	text-align: center;
+	border:1px solid #22a4c8;
+	border-radius: 2px;
+	background: none;
+	width: 100%;
+	padding:5px 0;
+}
+.searchTypeHolder{
+	float:left;
+	margin-left:-70px;
+}
+.searchType{
+	font-size:14px;
+	margin: 7px 8px;
+	float:left;
 }

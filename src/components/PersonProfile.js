@@ -3,11 +3,16 @@ import PersonProfileBottom from './PersonProfileBottom'
 
 class PersonProfile extends Component {
 	render() {
+		if(!this.props.avatar){
+			var avatar = '../public/images/emptyAvatar.jpg';
+		}else{
+			var avatar = this.props.avatar;
+		}
 		return (
 			<div className='mainProfile'>
 				<div className='mainProfileTop'>
 					<div className='mainProfileTopLeft'>
-						<img src={this.props.avatar} className='Avatar70' />
+						<img src={avatar} className='Avatar70' />
 						<div className='mainProfileDetails'>
 							<div className='mainProfileFirstLine'>{this.props.firstName} {this.props.middleName} {this.props.lastName}</div>
 							<div className='mainProfileSecondLine'>{this.props.currentTitle} at <span className='personCompany'>{this.props.currentOrg}</span></div>

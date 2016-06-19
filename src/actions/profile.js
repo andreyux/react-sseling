@@ -1,17 +1,33 @@
 import axios from 'axios';
 import request from 'superagent';
 import {userProfile} from '../apireq/data';
+import {companyProfile} from '../apireq/data';
 
 const USER = 'admin';
 const PASS = '$56hLbM6723!';
 
 export const SHOW_PERSON = "SHOW_PERSON";
+export const SHOW_COMPANY = "SHOW_COMPANY";
 
-export function profile(id){
+export function profile(type, id){
 	
-	var req = userProfile(id);
+	switch(type){
+		case 'person':
+			var req = userProfile(id);
+			return {
+				type: SHOW_PERSON,
+				payload: req
+			};
+		case 'company':
+			var req = companyProfile(id);
+			return {
+				type: SHOW_COMPANY,
+				payload: req
+			};
+	}
+	
 
-	console.log(req);
+	//console.log(req);
 	
 	// const req = request
 	//    .post('http://rhino.synapse.staging.c66.me/persons/find')
@@ -73,13 +89,16 @@ export function profile(id){
 	// 	},
 	// 	withCredentials: true,
 	// 	responseType: 'json', 
+	// 	auth:{
+	// 		username: USER,
+	// 		password: PASS
+	// 	},
 	// 	headers: {
 	// 		'Cache-Control': 'no-cache',
 	// 		'Content-Type': 'application/json',
-	// 		authorization: 'Basic YWRtaW46JDU2aExiTTY3MjMh'
 	// 	}
 	// });
-
+	// console.log(req);
 	return {
 		type: SHOW_PERSON,
 		payload: req

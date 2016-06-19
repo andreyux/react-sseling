@@ -8,17 +8,10 @@ import Person from './Person';
 import Company from './Company';
 
 const person = {
-	avatar: 'http://lorempixel.com/50/50/',
-	name: 'John Doe',
-	title: "Developer",
-	company: "HubSpot",
-	advocates: 12
+	
 }
 const company = {
-	avatar: '../public/images/hubSpotLogo.jpg',
-	name: 'HubSpot Inc.',
-	location: 'San Francisco, CA, US',
-	advocates: 12
+
 }
 
 
@@ -50,7 +43,11 @@ class Sidebar extends Component {
 			return(
 				<div>
 					<div className='sidebarHeading'>Companies</div>
-					<Company {...company} />
+					{
+						this.props.sidebarResults.map((company)=>{
+							return <Company {...company} />
+						})
+					}
 				</div>
 			);
 		}

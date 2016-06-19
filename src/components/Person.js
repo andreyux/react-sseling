@@ -12,7 +12,7 @@ class Person extends Component {
 			avatar = <img src='../public/images/emptyAvatar.jpg' className='Avatar50' />;
 		}
 		return (
-			<div className='queryResult' onClick={()=>this.props.viewProfile(this.props.attributes.userId)}>
+			<div className='queryResult' onClick={()=>this.props.viewProfile('person',this.props.attributes.userId)}>
 				{avatar}
 				<div className='personDetails'>
 					<div className='personName'>{this.props.attributes.name}</div>

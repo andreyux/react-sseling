@@ -1,6 +1,6 @@
 export default function(type){
 	var data;
-	if(type='profile'){
+	if(type==='person'){
 		data = {
 				  "links": {},
 				  "data": [
@@ -66,16 +66,68 @@ export default function(type){
 				    }
 				  ],
 				  "includes": []
-		}
-	}else{
-		data = {
-			"none":"none"
-		}
-	}
+				}
+			}else{
+				data = {
+					"data":[
+						{
+					      "id": "#25:2471",
+					      "type": "company",
+					      "attributes": {
+					        "companyId": 1,
+					        "image" : "../public/images/hubSpotLogo.jpg",
+					        "name": "HubSpot inc.",
+					        "location": "Cambridge, MA, US",
+					        "advocates": 10
+					      }
+					    },
+					    {
+							"id": "#25:4482",
+							"type": "company",
+							"attributes": {
+								"companyId": 2,
+								"image" : "../public/images/hubitLogo.jpg",
+								"name": "HubIt Corp.",
+								"location": "Toronto, ON, Canada"
+							}
+						}
+			    	],
+			    	"includes": []
+				}
+			}
 	return data;
 }
 
 export function userProfile(id){
+	
+	var data = {
+		  "rid": "#25:1554",
+		  "createdDate": 1451347200000,
+		  "lastUpdated": 1451260800000,
+		  "userId": -5773089,
+		  "triggerfoxId": 5773089,
+		  "accountPersonId": 0,
+		  "triggerfoxCharId": "zBHDCw8z3I",
+		  "uuid": "",
+		  "email": "ncollet@microsoft.com",
+		  "firstName": "Nicole",
+		  "middleName": "",
+		  "lastName": "Collet",
+		  "gender": "OTHER",
+		  "age": 0,
+		  "birthdayDay": 0,
+		  "birthdayMonth": 0,
+		  "birthdayYear": 0,
+		  "relationshipStatusType": "UNKNOWN",
+		  "bio": "",
+		  "headline": "Director, Field Strategy and Change Management at Microsoft",
+		  "currentTitle": "Director, Field Strategy and Change Management",
+		  "currentOrg": "Microsoft"
+		};
+	return data;
+} 
+
+export function companyProfile(id){
 	
 	var data = {
 		  "rid": "#25:1554",
