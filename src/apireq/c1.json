@@ -1,0 +1,10 @@
+{
+	"type" : "company",
+	"image" : "../public/images/hubSpotLogo.jpg",
+	"name" : "HubSpot Inc.",
+	"location" : "Cambridge, MA, US",
+	"website" : "www.hubspot.com",
+	"facebook" : "https://www.facebook.com/hubspot",
+	"twitter" : "https://twitter.com/HubSpot",
+	"linkedin" : "https://www.linkedin.com/company/hubspot"
+}

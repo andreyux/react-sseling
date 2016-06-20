@@ -1,0 +1,15 @@
+{
+	"userId": -5773089,
+	"image" : "../public/images/users/ronnaJackson.jpg",
+	"type" : "person",
+	"email": "ncollet@microsoft.com",
+	"firstName": "Ronna",
+	"middleName": "",
+	"lastName": "Jackson",
+	"gender": "OTHER",
+	"bio": "",
+	"title": "Community Manager",
+	"company": "HubSpot Inc.",
+	"location" : "Cambridge, MA, US",
+	"advocates" : false
+}

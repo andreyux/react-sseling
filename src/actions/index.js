@@ -10,7 +10,7 @@ export const SEARCH_RESULTS = "SEARCH_RESULTS";
 export function searchResults(type, query){
 
 	var req = data(type);
-	
+	console.log(type);
 	
 	// const req = request
 	//    .post('http://rhino.synapse.staging.c66.me/persons/find')

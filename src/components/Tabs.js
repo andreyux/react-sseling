@@ -7,6 +7,7 @@ class Tabs extends Component {
 				<div className='tabsHolder'>
 					<div onClick={this.tab1} className='tab'>{this.props.tab1}</div>
 					<div onClick={this.tab2} className='tab activeTab'>{this.props.tab2}</div>
+					<div onClick={this.tab3} className='tab'>{this.props.tab3}</div>
 					<div className='clearfix'></div>
 				</div>
 			</div>

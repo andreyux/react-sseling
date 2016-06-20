@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
-import PersonProfileBottom from './PersonProfileBottom'
+import Tabs from './Tabs';
+import Network from './Network'
 
 class PersonProfile extends Component {
+
+	showNetwork(){
+		return <Network {...this.props.network}/>
+	}
+
 	render() {
-		if(!this.props.avatar){
-			var avatar = '../public/images/emptyAvatar.jpg';
+		if(!this.props.image){
+			var image = '../public/images/emptyAvatar.jpg';
 		}else{
-			var avatar = this.props.avatar;
+			var image = this.props.image;
 		}
 		return (
 			<div className='mainProfile'>
 				<div className='mainProfileTop'>
 					<div className='mainProfileTopLeft'>
-						<img src={avatar} className='Avatar70' />
+						<img src={image} className='Avatar70' />
 						<div className='mainProfileDetails'>
 							<div className='mainProfileFirstLine'>{this.props.firstName} {this.props.middleName} {this.props.lastName}</div>
-							<div className='mainProfileSecondLine'>{this.props.currentTitle} at <span className='personCompany'>{this.props.currentOrg}</span></div>
+							<div className='mainProfileSecondLine'>{this.props.title} at <span className='personCompany'>{this.props.company}</span></div>
 							<div href='#' target='_blank' className='mainProfileThirdLine'>{this.props.location}</div>
 						</div>
 					</div>
@@ -26,7 +32,9 @@ class PersonProfile extends Component {
 					</div>
 				</div>
 				<div className='clearfix'></div>
-				<PersonProfileBottom />
+				
+				<Tabs tab1='Profile Info' tab2='Connections' />
+				{this.showNetwork()}
 			</div>
 		);
 	}

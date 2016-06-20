@@ -1,0 +1,28 @@
+{
+	"userId": -5773089,
+	"image" : "../public/images/users/simonSmith.jpg",
+	"type" : "person",
+	"email": "ncollet@microsoft.com",
+	"firstName": "Simon",
+	"middleName": "",
+	"lastName": "Smith",
+	"gender": "OTHER",
+	"bio": "",
+	"title": "Chief Designer",
+	"company": "HubSpot Inc.",
+	"location" : "Cambridge, MA, US",
+	"network" : [
+		{
+			"image" : "../public/images/users/jennyKahn.jpg",
+			"advocate" : true,
+			"advocateVIP" : false,
+			"firstName" : "Jenny",
+			"middleName" : "",
+			"lastName" : "Kahn",
+			"title" : "PR",
+			"company" : "Shared Spaces",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		}
+	]
+}

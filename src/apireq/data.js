@@ -1,3 +1,8 @@
+import c1 from './c1.json';
+import c1a1 from './c1a1.json';
+import c1a2 from './c1a2.json';
+import c1a3 from './c1a3.json';
+
 export default function(type){
 	var data;
 	if(type==='person'){
@@ -67,91 +72,56 @@ export default function(type){
 				  ],
 				  "includes": []
 				}
-			}else{
-				data = {
-					"data":[
-						{
-					      "id": "#25:2471",
-					      "type": "company",
-					      "attributes": {
-					        "companyId": 1,
-					        "image" : "../public/images/hubSpotLogo.jpg",
-					        "name": "HubSpot inc.",
-					        "location": "Cambridge, MA, US",
-					        "advocates": 10
-					      }
-					    },
-					    {
-							"id": "#25:4482",
-							"type": "company",
-							"attributes": {
-								"companyId": 2,
-								"image" : "../public/images/hubitLogo.jpg",
-								"name": "HubIt Corp.",
-								"location": "Toronto, ON, Canada"
-							}
-						}
-			    	],
-			    	"includes": []
+	}else if(type==='company'){
+		data = {
+			"data":[
+				{
+			      "id": "#25:2471",
+			      "type": "company",
+			      "attributes": {
+			        "companyId": 1,
+			        "image" : "../public/images/hubSpotLogo.jpg",
+			        "name": "HubSpot inc.",
+			        "location": "Cambridge, MA, US",
+			        "advocates": 10
+			      }
+			    },
+			    {
+					"id": "#25:4482",
+					"type": "company",
+					"attributes": {
+						"companyId": 2,
+						"image" : "../public/images/hubitLogo.jpg",
+						"name": "HubIt Corp.",
+						"location": "Toronto, ON, Canada"
+					}
 				}
-			}
+	    	],
+	    	"includes": []
+		}
+	}
 	return data;
 }
 
-export function userProfile(id){
-	
-	var data = {
-		  "rid": "#25:1554",
-		  "createdDate": 1451347200000,
-		  "lastUpdated": 1451260800000,
-		  "userId": -5773089,
-		  "triggerfoxId": 5773089,
-		  "accountPersonId": 0,
-		  "triggerfoxCharId": "zBHDCw8z3I",
-		  "uuid": "",
-		  "email": "ncollet@microsoft.com",
-		  "firstName": "Nicole",
-		  "middleName": "",
-		  "lastName": "Collet",
-		  "gender": "OTHER",
-		  "age": 0,
-		  "birthdayDay": 0,
-		  "birthdayMonth": 0,
-		  "birthdayYear": 0,
-		  "relationshipStatusType": "UNKNOWN",
-		  "bio": "",
-		  "headline": "Director, Field Strategy and Change Management at Microsoft",
-		  "currentTitle": "Director, Field Strategy and Change Management",
-		  "currentOrg": "Microsoft"
-		};
+//PUBLIC PROFILE THAT HAS ADVOCATES CONNECTED TO THEM
+export function userProfile(){
+	var data = c1a1;
 	return data;
 } 
 
-export function companyProfile(id){
-	
+export function companyProfile(){
+
+	var profile1 = userProfile();
 	var data = {
-		  "rid": "#25:1554",
-		  "createdDate": 1451347200000,
-		  "lastUpdated": 1451260800000,
-		  "userId": -5773089,
-		  "triggerfoxId": 5773089,
-		  "accountPersonId": 0,
-		  "triggerfoxCharId": "zBHDCw8z3I",
-		  "uuid": "",
-		  "email": "ncollet@microsoft.com",
-		  "firstName": "Nicole",
-		  "middleName": "",
-		  "lastName": "Collet",
-		  "gender": "OTHER",
-		  "age": 0,
-		  "birthdayDay": 0,
-		  "birthdayMonth": 0,
-		  "birthdayYear": 0,
-		  "relationshipStatusType": "UNKNOWN",
-		  "bio": "",
-		  "headline": "Director, Field Strategy and Change Management at Microsoft",
-		  "currentTitle": "Director, Field Strategy and Change Management",
-		  "currentOrg": "Microsoft"
+			"type" : "company",
+			"image" : "../public/images/hubSpotLogo.jpg",
+			"name" : "HubSpot Inc.",
+			"location" : "Cambridge, MA, US",
+			"website" : "www.hubspot.com",
+			"facebook" : "https://www.facebook.com/hubspot",
+			"twitter" : "https://twitter.com/HubSpot",
+			"linkedin" : "https://www.linkedin.com/company/hubspot",
+			"network" : [c1a1, c1a2, c1a3]
 		};
 	return data;
 } 

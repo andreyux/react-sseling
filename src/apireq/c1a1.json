@@ -1,0 +1,52 @@
+{
+	"userId": -5773089,
+	"image" : "../public/images/johnMiller.jpg",
+	"type" : "person",
+	"email": "ncollet@microsoft.com",
+	"firstName": "John",
+	"middleName": "",
+	"lastName": "Miller",
+	"gender": "OTHER",
+	"bio": "",
+	"title": "CMO",
+	"company": "HubSpot Inc.",
+	"location" : "Cambridge, MA, US",
+	"network" : [
+			{
+			"image" : "../public/images/users/amyPuller.jpg",
+			"advocate" : true,
+			"advocateVIP" : true,
+			"firstName" : "Amy",
+			"middleName" : "",
+			"lastName" : "Puller",
+			"title" : "CMO",
+			"company" : "IBM",
+			"location" : "Palo Alto, CA, US",
+			"advovatesFor" : ["Influitive","IBM"]
+		},
+		{
+			"image" : "../public/images/users/taoHu.jpg",
+			"advocate" : true,
+			"advocateVIP" : false,
+			"firstName" : "Tao",
+			"middleName" : "",
+			"lastName" : "Hu",
+			"title" : "Marketing Manager",
+			"company" : "HP",
+			"location" : "San Francisco, CA, US",
+			"advovatesFor" : ["Influitive","IBM"]
+		},
+		{
+			"image" : "../public/images/users/sarahDunn.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "Sarah",
+			"middleName" : "",
+			"lastName" : "Dunn",
+			"title" : "PR",
+			"company" : "Shared Spaces",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		}
+	]
+}

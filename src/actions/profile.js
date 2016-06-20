@@ -99,8 +99,5 @@ export function profile(type, id){
 	// 	}
 	// });
 	// console.log(req);
-	return {
-		type: SHOW_PERSON,
-		payload: req
-	};
+	
 }
