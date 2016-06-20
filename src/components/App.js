@@ -11,13 +11,15 @@ import SearchBar from './SearchBar';
 import Sidebar from './Sidebar';
 import MainContentArea from './MainContentArea';
 
+import Mod from './Mod';
+
 
 class App extends Component {
-
 	render() {
 		if(!this.props.sidebarResults){
 			return (
 				<div id='appContainer'>
+					<Mod />
 					<SearchBar />
 					<div className='splashScreen'>
 						<img src='../public/images/splashScreen.jpg' />
@@ -28,6 +30,7 @@ class App extends Component {
 		}else{
 			return (
 				<div id='appContainer'>
+					<Mod />
 					<SearchBar />
 					<div className='clearfix'></div>
 					<Sidebar />

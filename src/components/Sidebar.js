@@ -45,7 +45,7 @@ class Sidebar extends Component {
 					<div className='sidebarHeading'>Companies</div>
 					{
 						this.props.sidebarResults.map((company)=>{
-							return <Company {...company} />
+							return <Company key={company.attributes.name} {...company} />
 						})
 					}
 				</div>
