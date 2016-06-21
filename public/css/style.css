@@ -122,7 +122,11 @@ body{
 	line-height: 17px;
 	width: 220px;
 }
-
+.personDetailsConnection{
+	float:left;
+	line-height: 17px;
+	width: 280px;
+}
 .personName{
 	font-weight: bold;
 	color: #08a5c5;

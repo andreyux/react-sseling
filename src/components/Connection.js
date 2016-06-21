@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { emailModal } from '../actions/sendEmail';
+import { action_userProfileTab } from '../actions/profile';
 import { profile } from '../actions/profile';
 import _ from "lodash";
 
@@ -45,12 +46,12 @@ class Connection extends Component {
 
 		return (
 			<div className='connectionHolder'>
-					<div className='avatarHolder'  onClick={()=>this.props.viewProfile('person',1)}>
+					<div className='avatarHolder'  onClick={()=>{this.props.viewProfile('person',1);this.props.action_userProfileTab(1)}}>
 						<img src={this.props.image} className='Avatar70' />
 						{advocate}
 						{advocateVIP}
 					</div>
-					<div className='personDetails' onClick={()=>this.props.viewProfile('person',1)}>
+					<div className='personDetailsConnection' onClick={()=>this.props.viewProfile('person',1)}>
 						<div className='personName'>{this.props.firstName} {this.props.middleName} {this.props.lastName}</div>
 						<div className='personWork'>{this.props.title} at <span className='personCompany'>{this.props.company}</span></div>
 						<div className='locationS'>{this.props.location}</div>
@@ -64,7 +65,7 @@ class Connection extends Component {
 }
 
 function mapDispatchToProps(dispatch){
-	return bindActionCreators({viewProfile:profile, emailModal:emailModal}, dispatch);
+	return bindActionCreators({viewProfile:profile, emailModal:emailModal,action_userProfileTab:action_userProfileTab}, dispatch);
 }
 function mapStateToProps(state){
 	return {
