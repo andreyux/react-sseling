@@ -13,15 +13,16 @@
 	"location" : "Cambridge, MA, US",
 	"network" : [
 			{
-			"image" : "../public/images/users/amyPuller.jpg",
+			"image" : "../public/images/users/frankFalcone.jpg",
 			"advocate" : true,
 			"advocateVIP" : true,
-			"firstName" : "Amy",
+			"firstName" : "Frank",
 			"middleName" : "",
-			"lastName" : "Puller",
-			"title" : "CMO",
-			"company" : "IBM",
-			"location" : "Palo Alto, CA, US",
+			"lastName" : "Falcone",
+			"email" : "frank@influitive.com",
+			"title" : "Product Manager",
+			"company" : "Influitive",
+			"location" : "Toronto, ON, Canada",
 			"advovatesFor" : ["Influitive","IBM"]
 		},
 		{

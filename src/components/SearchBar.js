@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { searchResults } from '../actions/';
 
 class SearchBar extends Component {
+
 	render() {
 		return (
 			<div id='searchHolder'>

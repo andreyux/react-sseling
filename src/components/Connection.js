@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { emailModal } from '../actions/index';
+import { emailModal } from '../actions/sendEmail';
 import { profile } from '../actions/profile';
 import _ from "lodash";
 
@@ -14,7 +14,7 @@ class Connection extends Component {
 		}
 		if(this.props.advocateVIP){
 			var advocateVIP = <div className='advocateBadgeVIP'>VIP</div>;
-			var requestIntro = <div onClick={()=>this.props.emailModal(true)} className='requestIntroduction'><i className="fa fa-envelope" aria-hidden="true"></i> Request and introduction to Nicole Collet</div>;
+			var requestIntro = <div onClick={()=>this.props.emailModal(true, this.props.firstName, this.props.email, this.props.publicProfile.firstName+" "+this.props.publicProfile.lastName)} className='requestIntroduction'><i className="fa fa-envelope" aria-hidden="true"></i> Request and introduction to {this.props.publicProfile.firstName+" "+this.props.publicProfile.lastName}</div>;
 		}
 		if(this.props.network){
 			var advocatesConnected = (
@@ -60,7 +60,8 @@ function mapDispatchToProps(dispatch){
 }
 function mapStateToProps(state){
 	return {
-		sidebarResults: state.sidebar
+		sidebarResults: state.sidebar,
+		publicProfile: state.profile
 	};
 }
 

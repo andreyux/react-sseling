@@ -27,6 +27,7 @@ body{
 #appContainer{
 	width:1024px;
 	height: auto;
+	min-height: 470px;
 	background:#fff;
 	border:1px solid #d0d2d3;
 	border-radius: 2px;
@@ -69,10 +70,14 @@ body{
 	position: relative;
 }
 .selectProfile{
-	font-size:22px;
-	text-align: center;
-	margin-top:200px;
-	color:#a1a1a1;
+	font-size: 22px;
+    text-align: center;
+    padding: 200px 0 245px;
+    height: 100%;
+    float: left;
+    width: 720px;
+    color: #a1a1a1;
+    border-left: 1px solid #d0d2d3;
 }
 #sidebar{
 	float:left;
@@ -463,7 +468,7 @@ body{
 	background:#fff;
 	width:400px;
 	display: block;
-	margin: 200px auto;
+	margin: 100px auto;
 	padding:20px;
 }
 .modalHeading{
@@ -507,4 +512,21 @@ body{
     background-color: #00badf;
     box-shadow: 0px 2px #00a5c5;
     color: white !important;
+}
+.cursor{
+	cursor: pointer;
+}
+.red{
+	color:#db5240;
+}
+.alert{
+	padding:10px;
+	border-radius: 2px;
+	text-align: center;
+	font-size:14px;
+	background:#edf3de;
+	color:#6f8734;
+}
+label{
+	font-size:14px;
 }
