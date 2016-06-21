@@ -23,7 +23,7 @@ class Modal extends Component {
 								<label for='sales'>Sales person:</label>
 								<input id="sales" type='text' className='inputText' value='truman@influitive.com' disabled />
 							    <label for='advocate'>Advocate email:</label>
-							    <input id="advocate" type='text' className='inputText' value={this.props.emailModalState.aEmail} readonly />
+							    <input id="advocate" type='text' className='inputText' value={this.props.emailModalState.aEmail} readOnly />
 								<label for='subject'>Subject:<span className='red'>*</span></label>
 								<input id="subject" type='text' className='inputText' placeholder='Subject Line' value={this.props.emailModalState.aName+", would you introduce me to "+this.props.emailModalState.publicUser} />
 								<label for='body'>Message:<span className='red'>*</span></label>
