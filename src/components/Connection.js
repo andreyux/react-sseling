@@ -9,6 +9,7 @@ import _ from "lodash";
 class Connection extends Component {
 	
 	render() {
+		
 		if(this.props.advocate){
 			var advocate = <div className='advocateBadge'><i className="fa fa-star" aria-hidden="true"></i></div>;
 		}
@@ -16,21 +17,28 @@ class Connection extends Component {
 			var advocateVIP = <div className='advocateBadgeVIP'>VIP</div>;
 			var requestIntro = <div onClick={()=>this.props.emailModal(true, this.props.firstName, this.props.email, this.props.publicProfile.firstName+" "+this.props.publicProfile.lastName)} className='requestIntroduction'><i className="fa fa-envelope" aria-hidden="true"></i> Request and introduction to {this.props.publicProfile.firstName+" "+this.props.publicProfile.lastName}</div>;
 		}
-		if(this.props.network){
+		var numberAdvocates = 0;
+		_.map(this.props.network, (advocate, key) => {
+			if(advocate.advocateVIP==true){
+				numberAdvocates=numberAdvocates+1;
+			}
+		})
+
+		if(this.props.network && numberAdvocates>0){
 			var advocatesConnected = (
 				<div className='advocatesHolder'>
-					<div className='advocatesNumber'>{Object.keys(this.props.network).length}</div>
+					<div className='advocatesNumber'>{numberAdvocates}</div>
 					<div className='advocatesHeads'>
 						{
 							_.map(this.props.network, (advocate, key) => {
-								if(advocate.advocate==true){
+								if(advocate.advocateVIP==true){
 									return <img key={key} src={advocate.image} className='advocateHead' />
 								}
 							})
 						}
 					</div>
 					<div className='clearfix'></div>
-					<div className='advocatesLabels'>Advocate Connections</div>
+					<div className='advocatesLabels'>VIP advocate connections</div>
 				</div>
 			);
 		}	

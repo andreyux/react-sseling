@@ -6,7 +6,7 @@ import { profile } from '../actions/profile';
 class Company extends Component {
 	render() {
 		if(this.props.attributes.advocates){
-			var advocates = <div className='personAdvocates'>{this.props.attributes.advocates} advocate connections</div>;
+			var advocates = <div className='personAdvocates'>{this.props.attributes.advocates} VIP advocates connections</div>;
 		}
 		return (
 			<div className='queryResult' onClick={()=>this.props.viewProfile('company',this.props.attributes.userId)}>

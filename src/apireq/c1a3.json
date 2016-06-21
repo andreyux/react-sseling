@@ -1,15 +1,40 @@
 {
 	"userId": -5773089,
-	"image" : "../public/images/users/ronnaJackson.jpg",
+	"image" : "../public/images/users/8.jpg",
 	"type" : "person",
-	"email": "ncollet@microsoft.com",
-	"firstName": "Ronna",
+	"email": "dustin@microsoft.com",
+	"firstName": "Dustin",
 	"middleName": "",
-	"lastName": "Jackson",
+	"lastName": "Goldberg",
 	"gender": "OTHER",
 	"bio": "",
-	"title": "Community Manager",
-	"company": "HubSpot Inc.",
-	"location" : "Cambridge, MA, US",
-	"advocates" : false
+	"title": "VP, Partner Programs",
+	"company": "Microsoft Corp.",
+	"location" : "Redmond, WA, US",
+	"network" : [
+		{
+			"image" : "../public/images/users/7.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "Scott",
+			"middleName" : "",
+			"lastName" : "Hillman",
+			"title" : "Director of Communications",
+			"company" : "Molson Canada",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		},
+		{
+			"image" : "../public/images/users/8.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "Steve",
+			"middleName" : "",
+			"lastName" : "Cerrone",
+			"title" : "CEO",
+			"company" : "Habitat for Humanity",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		}
+	]
 }

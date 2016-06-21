@@ -5,6 +5,7 @@ import {companyProfile} from '../apireq/data';
 
 export const SHOW_PERSON = "SHOW_PERSON";
 export const SHOW_COMPANY = "SHOW_COMPANY";
+export const SHOW_TAB = "SHOW_TAB";
 
 export function profile(type, id){
 	switch(type){
@@ -21,4 +22,11 @@ export function profile(type, id){
 				payload: req
 			};
 	}
+}
+
+export function action_userProfileTab(tab=2){
+	return {
+		type: SHOW_TAB,
+		payload: tab
+	};
 }

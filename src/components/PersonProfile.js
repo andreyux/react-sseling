@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import Tabs from './Tabs';
-import Network from './Network'
+
 
 class PersonProfile extends Component {
-
-	showNetwork(){
-		return <Network {...this.props.network}/>
-	}
-
 	render() {
 		if(!this.props.image){
 			var image = '../public/images/emptyAvatar.jpg';
@@ -32,9 +27,7 @@ class PersonProfile extends Component {
 					</div>
 				</div>
 				<div className='clearfix'></div>
-				
-				<Tabs tab1='Profile Info' tab2='Connections' />
-				{this.showNetwork()}
+				<Tabs network={this.props.network} tab1='Profile Info' tab2='Connections'></Tabs>
 			</div>
 		);
 	}

@@ -22,7 +22,7 @@ class App extends Component {
 					<Mod />
 					<SearchBar />
 					<div className='splashScreen'>
-						<img src='../public/images/splashScreen.jpg' />
+						<img className="splashScreenImg" src='../public/images/splashScreen.jpg' />
 					</div>
 					<div className='clearfix'></div>
 				</div>

@@ -1,4 +1,4 @@
-export default function(state=null, action){
+export function viewProfile(state=null, action){
 	switch(action.type){
 		case "SHOW_PERSON":
 			return action.payload;
@@ -6,5 +6,13 @@ export default function(state=null, action){
 			return action.payload;
 	}
 
+	return state;
+}
+
+export function userProfileTab(state=null, action=1){
+	switch(action.type){
+		case "SHOW_TAB":
+			return action.payload;
+	}
 	return state;
 }

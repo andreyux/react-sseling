@@ -19,7 +19,7 @@ class MainContentArea extends Component {
 
 	render() {
 		if(!this.props.profile){
-			return <div className='selectProfile'>Please select a profile.</div>;
+			return <div className='selectProfile'>Please select a company.</div>;
 		}
 		return (
 			<div className='mainContentArea'>

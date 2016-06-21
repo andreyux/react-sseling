@@ -2,6 +2,7 @@ import c1 from './c1.json';
 import c1a1 from './c1a1.json';
 import c1a2 from './c1a2.json';
 import c1a3 from './c1a3.json';
+import c1a4 from './c1a4.json';
 
 export default function(type){
 	var data;
@@ -80,10 +81,10 @@ export default function(type){
 			      "type": "company",
 			      "attributes": {
 			        "companyId": 1,
-			        "image" : "../public/images/hubSpotLogo.jpg",
-			        "name": "HubSpot inc.",
-			        "location": "Cambridge, MA, US",
-			        "advocates": 10
+			        "image" : "../public/images/microsoftLogo.jpg",
+			        "name": "Microsoft Corp.",
+			        "location": "Redmond, WA, US",
+			        "advocates": 3
 			      }
 			    },
 			    {
@@ -91,11 +92,21 @@ export default function(type){
 					"type": "company",
 					"attributes": {
 						"companyId": 2,
-						"image" : "../public/images/hubitLogo.jpg",
-						"name": "HubIt Corp.",
-						"location": "Toronto, ON, Canada"
+						"image" : "../public/images/microSDlogo.jpg",
+						"name": "MicroSD Inc.",
+						"location": "San Francisco, CA, US"
+					}
+				},{
+					"id": "#25:4482",
+					"type": "company",
+					"attributes": {
+						"companyId": 3,
+						"image" : "../public/images/microTechLogo.jpg",
+						"name": "microtech",
+						"location": "Miami, FL, US"
 					}
 				}
+
 	    	],
 	    	"includes": []
 		}
@@ -114,14 +125,14 @@ export function companyProfile(){
 	var profile1 = userProfile();
 	var data = {
 			"type" : "company",
-			"image" : "../public/images/hubSpotLogo.jpg",
-			"name" : "HubSpot Inc.",
-			"location" : "Cambridge, MA, US",
-			"website" : "www.hubspot.com",
-			"facebook" : "https://www.facebook.com/hubspot",
-			"twitter" : "https://twitter.com/HubSpot",
-			"linkedin" : "https://www.linkedin.com/company/hubspot",
-			"network" : [c1a1, c1a2, c1a3]
+			"image" : "../public/images/microsoftLogo.jpg",
+			"name" : "Microsoft Corp.",
+			"location" : "Redmond, WA, US",
+			"website" : "www.microsoft.com",
+			"facebook" : "https://www.facebook.com/microsoft",
+			"twitter" : "https://twitter.com/microsoft",
+			"linkedin" : "https://www.linkedin.com/company/microsoft",
+			"network" : [c1a1, c1a2, c1a3, c1a4]
 		};
 	return data;
 } 

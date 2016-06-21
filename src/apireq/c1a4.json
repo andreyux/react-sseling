@@ -1,0 +1,52 @@
+{
+	"userId": -5773089,
+	"image" : "../public/images/users/11.jpg",
+	"type" : "person",
+	"email": "kim@microsoft.com",
+	"firstName": "Kim",
+	"middleName": "",
+	"lastName": "Totterham",
+	"gender": "OTHER",
+	"bio": "",
+	"title": "Director, Product Marketing",
+	"company": "Microsoft Corp.",
+	"location" : "Redmond, WA, US",
+	"network" : [
+		{
+			"image" : "../public/images/users/9.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "Janet",
+			"middleName" : "",
+			"lastName" : "Hillmott",
+			"title" : "Sr. Community Manager",
+			"company" : "Freshbooks Inc.",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		},
+		{
+			"image" : "../public/images/users/10.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "George",
+			"middleName" : "",
+			"lastName" : "Palmer",
+			"title" : "CFO",
+			"company" : "Twitter Inc.",
+			"location" : "San Francisco, CA, US",
+			"advovatesFor" : ["Influitive","IBM"]
+		},
+		{
+			"image" : "../public/images/users/11.jpg",
+			"advocate" : false,
+			"advocateVIP" : false,
+			"firstName" : "Tammy",
+			"middleName" : "",
+			"lastName" : "Watson",
+			"title" : "Channel Marketing Manager",
+			"company" : "CGI",
+			"location" : "Toronto, ON, Canada",
+			"advovatesFor" : ["Influitive","IBM"]
+		}
+	]
+}
